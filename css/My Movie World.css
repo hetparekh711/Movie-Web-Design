@@ -1,0 +1,540 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #15172b;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    padding: 10px 0px 10px 0px;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgba(21, 23, 43, 0.8);
+    top: 0px;
+}
+
+.logo {
+    filter: invert(100%);
+    width: 100px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.nav {
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    list-style: none;
+}
+
+.logos {
+    display: flex;
+}
+
+.marlogo {
+    background-color: #0afefe;
+    margin: 70px 0px 0px 28px;
+    width: 120px;
+    height: 60px;
+    filter: invert(100%);
+    transition: 0.90s;
+    border-radius: 5px;
+}
+
+.marlogo:hover {
+    transform: scale(1.1);
+}
+
+.dclogo {
+    margin: 70px 0px 0px 28px;
+    width: 120px;
+    height: 60px;
+    transition: 0.90s;
+    border-radius: 5px;
+}
+
+.dclogo:hover {
+    transform: scale(1.1);
+}
+
+.m {
+    text-align: center;
+    font-size: 50px;
+}
+
+.i {
+    word-spacing: 3px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#l1 {
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#l2 {
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#l3 {
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#l1:hover,
+#l2:hover,
+#l3:hover {
+
+    border: 0px solid black;
+    border-radius: 100px;
+    color: black;
+    animation-name: first;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes first {
+    from {}
+
+    to {
+        background-color: aquamarine;
+    }
+}
+
+.containar {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bat {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 35%);
+    transition: 0.90s;
+}
+
+#p1 {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bat:hover {
+    box-shadow: 0px 0px 20px 20px rgba(49, 22, 22, 0.3);
+    transform: scale(0.90);
+}
+
+.doc {
+    margin-top: 26px;
+}
+
+.all {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #15172b;
+    position: absolute;
+    top: 100%;
+}
+
+.img {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: movieslider 50s infinite linear;
+}
+
+@keyframes movieslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/1uQSh7P3k0oRbRf0vH8GVt4thpP.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/ndCSoasjIZAMMDIuMxuGnNWu4DU.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/uE101CHyKzeK4UU2j9LVqWfC2hN.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/69EFgWWPFWbRNHmQgYdSnyJ94Ge.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/cinER0ESG0eJ49kXlExM0MEWGxW.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/4N6zEMfZ57zNEQcM8gWeERFupMv.jpg);
+    }
+
+}
+
+.marvel {
+
+    position: fixed;
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    animation: marvelslider 30s infinite linear;
+}
+
+@keyframes marvelslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/lmZFxXgJE3vgrciwuDib0N8CfQo.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/tTlAA0REGPXSZPBfWyTW9ipIv1I.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/4TSqtluelcWByj8YZdqwzQVjI0O.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/xpFIaHL7Rm5kKLcEPDEMpjh4Xq6.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/a7sAqMKv5tkAdMzFfIhPqIBmQ9g.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/7FWlcZq3r6525LWOcvO9kNWurN1.jpg);
+    }
+
+}
+
+
+.dc {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: dcslider 50s infinite linear;
+}
+
+@keyframes dcslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/mX3WOJPBzzl4kj4xU5lL7qfD6C3.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/69EFgWWPFWbRNHmQgYdSnyJ94Ge.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/58r049aVTO1KjAYVuWJr0KgG5nY.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/dH7ia3vtkYCa3CBvDnvVjqm9uiQ.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/yzpCv8CCWondN7O5au1KGiqnC3A.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/6eC6FqD3euWODJkOkaMdDm3yNMf.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/8LHSDyRizQ4kQz5rEHPKyXPvMG3.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/rfMpUe6lcIrxhbz8Yqes2oLVW1B.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/gd2vQT8uMf1FAsiC0OdewL7XUFR.jpg);
+    }
+
+}
+
+.starwar {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: starwarslider 30s infinite linear;
+}
+
+@keyframes starwarslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/dMZxEdrWIzUmUoOz2zvmFuutbj7.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/soJdiy91Mcyj29GzEgZ5svFcuZg.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/5fu7fzy4NZTsL1Jap00UBIInAuB.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/1uQSh7P3k0oRbRf0vH8GVt4thpP.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/eFaRU5y8wIwV0D14DPkbLaRUzOV.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/8BTsTfln4jlQrLXUBquXJ0ASQy9.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/SPkEiZGxq5aHWQ2Zw7AITwSEo2.jpg);
+    }
+
+}
+
+.tvmarvel {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: tvmarvelslider 30s infinite linear;
+}
+
+@keyframes tvmarvelslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/mVBBJ56u8gQlfYHvTsCXKhTJIfU.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/4N6zEMfZ57zNEQcM8gWeERFupMv.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/bZGAX8oMDm3Mo5i0ZPKh9G2OcaO.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/eO8h4fwdjWodPr3awVr5wqMN3Ut.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/gLACGQiS8kRP2hDnzdmIYo2uRRc.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/fjEOQhzZk2Or7VYUBeMx5ZIwU95.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/gV2PVqsNBoklmg7h3ftLF1njoGg.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/2yfmJudf695JBUJRW7QJjVN1rg5.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/MaQ7hbNsiJ30p14UgRdEnXDGMH.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/80BRASQnT9KT7BkFeEI0EdeRIF3.jpg);
+    }
+
+}
+
+.tvdc {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: tvdcslider 30s infinite linear;
+}
+
+@keyframes tvdcslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/ctxm191q5o3axFzQsvNPlbKoSYv.jpg);
+    }
+
+    10% {
+        background-image: url(https://image.tmdb.org/t/p/original/ktDJ21QQscbMNQfPpZBsNORxdDx.jpg);
+    }
+
+    20% {
+        background-image: url(https://image.tmdb.org/t/p/original/41yaWnIT8AjIHiULHtTbKNzZTjc.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/7QSM3AsgWXctWBm7OFov9dGdZgt.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/vNnLAKmoczRlNarxyGrrw0KSOeX.jpg);
+    }
+
+    50% {
+        background-image: url(https://image.tmdb.org/t/p/original/isPWZirQUCHpQ8aJZHa5s3EVXv1.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/pPKiIJEEcV0E1hpVcWRXyp73ZpX.jpg);
+    }
+
+    70% {
+        background-image: url(https://image.tmdb.org/t/p/original/kkgomBlNN9UvPhNGQmVMpOwAnXG.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/jgb9xICHFX8wTGQ75js4uNbttQs.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/uRIiWJ0MrdNjykxl4mp8mXEi308.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/uaKaTGxIcjGb1mb1gY9W0LiCX4b.jpg);
+    }
+
+}
+
+.tvstarwar {
+    height: 86.5vh;
+    width: 100%;
+    top: 90px;
+    background-size: cover;
+    position: fixed;
+    animation: tvstarwarslider 30s infinite linear;
+}
+
+@keyframes tvstarwarslider {
+    0% {
+        background-image: url(https://image.tmdb.org/t/p/original/7huDoLPgTumapij4WJQUvNwXEJh.jpg);
+    }
+
+    10% {
+        background-image: url(https://rare-gallery.com/fullwalls/46006-Kylo-Ren-Adam-Driver-Star-Wars-Episode-VII-The-Force.jpg);
+    }
+
+    30% {
+        background-image: url(https://image.tmdb.org/t/p/original/9ijMGlJKqcslswWUzTEwScm82Gs.jpg);
+    }
+
+    40% {
+        background-image: url(https://image.tmdb.org/t/p/original/uE101CHyKzeK4UU2j9LVqWfC2hN.jpg);
+    }
+
+    60% {
+        background-image: url(https://image.tmdb.org/t/p/original/sjx6zjQI2dLGtEL0HGWsnq6UyLU.jpg);
+    }
+
+    80% {
+        background-image: url(https://image.tmdb.org/t/p/original/sjxtIUCWR74yPPcZFfTsToepfWm.jpg);
+    }
+
+    90% {
+        background-image: url(https://image.tmdb.org/t/p/original/AdJgkXb8oLI8e4rsk8XzkvABIuw.jpg);
+    }
+
+    100% {
+        background-image: url(https://image.tmdb.org/t/p/original/6t9gvk0Off0HkqFjBu9Rqz6KMBj.jpg);
+    }
+
+}
